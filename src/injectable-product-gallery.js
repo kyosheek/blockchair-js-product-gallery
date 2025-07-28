@@ -1,4 +1,7 @@
-function inject(id: string) {
+/**
+ * @param id Mount point ID
+ */
+function inject(id) {
 	const el = document.getElementById(id)
 	if (!el) {
 		throw new Error(`No element with id '${id}' present on a page.`)
@@ -11,11 +14,7 @@ function inject(id: string) {
 	utmParams.append('utm_content', 'injected_product_gallery')
 	const query = utmParams.toString()
 
-	type Item = {
-		title: string, url: string, background: string, content: string
-	}
-
-	const content: Item[] = [{
+	const content = [{
 		title: 'Blockchair',
 		url: 'https://blockchair.com',
 		background: 'linear-gradient(90deg, #FF0078 0%, #A42EFF 100%)',
