@@ -1,7 +1,7 @@
 {
   "name": "@kyosheek/blockchair-js-product-gallery",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Injectable gallery of Blockchair products",
   "keywords": [
     "javascript",
