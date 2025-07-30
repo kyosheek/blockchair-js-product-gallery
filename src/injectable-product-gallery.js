@@ -63,7 +63,7 @@ function inject (
 	const section = document.createElement('section')
 	section.style = 'width:100%;height:max-content;overflow:hidden;'
 
-	const sectionTitle = document.createElement('h2')
+	const sectionTitle = document.createElement(sectionTitleHeading)
 	sectionTitle.innerHTML = 'Blockchair Product Gallery'
 	sectionTitle.style.position = 'absolute'
 	sectionTitle.style.width = '1px'
@@ -107,7 +107,7 @@ function inject (
 			img.height = 24
 			img.style = 'padding:0;margin:0;flex-shrink:0;height:1.5rem;width:auto;'
 
-			const title = document.createElement('h3')
+			const title = document.createElement(anchorTitleHeading)
 			title.innerHTML = item.title
 			title.style =
 				`padding:0;margin:0;flex-shrink:0;font-size:1.25rem;font-weight:500;line-height:1.5;font-family:${fontFamilyTitle};`

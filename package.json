@@ -1,12 +1,39 @@
 {
-  "name": "injectable-blockchair-product-gallery",
-  "private": true,
+  "name": "@kyosheek/blockchair-js-product-gallery",
   "version": "1.0.0",
+  "private": true,
+  "description": "Injectable gallery of Blockchair products",
+  "keywords": [
+    "javascript",
+    "blockchair"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "license": "GPL-3.0-only",
+  "author": "kyosheek",
   "type": "module",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.8",
+    "fdir": "^6.4.6",
+    "fsevents": "^2.3.3",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.3",
+    "postcss": "^8.5.6",
+    "rollup": "^4.46.1",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.14"
   },
   "devDependencies": {
     "vite": "^7.0.4"
