@@ -95,7 +95,7 @@ function inject (
 			a.style.background = item.background
 
 			const head = document.createElement('div')
-			head.style = 'display:flex;flex-direction:row;align-items:center;gap:0.5rem;'
+			head.style = 'display:flex;flex-direction:row;align-items:center;gap:0.5rem;white-space:nowrap;overflow:hidden;'
 
 			const img = document.createElement('img')
 			img.src = item.icon
@@ -105,12 +105,12 @@ function inject (
 			img.fetchPriority = 'low'
 			img.width = 24
 			img.height = 24
-			img.style = 'padding:0;margin:0;height:1.5rem;width:auto;'
+			img.style = 'padding:0;margin:0;flex-shrink:0;height:1.5rem;width:auto;'
 
 			const title = document.createElement('h3')
 			title.innerHTML = item.title
 			title.style =
-				`padding:0;margin:0;font-size:1.25rem;font-weight:500;line-height:1.5;font-family:${fontFamilyTitle};`
+				`padding:0;margin:0;flex-shrink:0;font-size:1.25rem;font-weight:500;line-height:1.5;font-family:${fontFamilyTitle};`
 
 			head.append(img, title)
 
