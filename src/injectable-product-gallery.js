@@ -7,8 +7,8 @@ import wowcash from './assets/wow.cash.svg'
  * @param mountID {string} Mount point ID
  * @param sectionTitleHeading {'h2' | 'h3' | 'h4' | 'h5'}
  * @param anchorTitleHeading {'h3' | 'h4' | 'h5' | 'h6'}
- * @param fontFamilyTitle {string} Font family for title
- * @param fontFamilyDescription {string} Font family for description
+ * @param fontFamilyTitle {CSSStyleDeclaration['fontFamily']} Font family for title
+ * @param fontFamilyDescription {CSSStyleDeclaration['fontFamily']} Font family for description
  */
 function inject (
 	mountID,

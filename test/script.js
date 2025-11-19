@@ -1,2 +1,2 @@
-import { inject } from "@kyoshee/blockchair-js-product-gallery"
+import { inject } from "../src/index.js"
 inject('blockchair-product-gallery', 'h2', 'h3', '"Helvetica"', 'monospace');
