@@ -1,7 +1,8 @@
-import threexpl from './assets/3xpl.com.svg'
-import blockchair from './assets/blockchair.com.svg'
-import budgetday from './assets/budget.day.webp'
-import wowcash from './assets/wow.cash.svg'
+import threexpl from './assets/3xpl.com.svg?url'
+import blockchair from './assets/blockchair.com.svg?url'
+import budgetday from './assets/budget.day.webp?url'
+import wowcash from './assets/wow.cash.svg?url'
+import privacywatch from './assets/privacy.watch.svg?url'
 
 /**
  * @param mountID {string} Mount point ID
@@ -58,6 +59,13 @@ function inject (
 		background: 'linear-gradient(270deg, #E55C2E 0%, #E5A82E 100%)',
 		foreground: 'white',
 		icon: budgetday,
+	}, {
+		title: 'privacy.watch',
+		url: 'https://privacy.watch',
+		description: 'Which coin dominates the privacy market?',
+		background: 'linear-gradient(to right, #0FBF00 0%, #0DA600 100%)',
+		foreground: 'white',
+		icon: privacywatch,
 	}]
 
 	const section = document.createElement('section')
