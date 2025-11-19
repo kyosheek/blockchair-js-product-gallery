@@ -1,15 +1,31 @@
+/**
+ * @import { InjectFN, SectionHeading, AnchorHeading } from '@kyosheek/injectable-product-gallery'
+ */
+
+/** @type {import('./assets/3xpl.com.svg?url').default} */
 import threexpl from './assets/3xpl.com.svg?url'
+
+/** @type {import('./assets/blockchair.com.svg?url').default} */
 import blockchair from './assets/blockchair.com.svg?url'
-import budgetday from './assets/budget.day.webp?url'
+
+/** @type {import('./assets/budget.day.svg?url').default} */
+import budgetday from './assets/budget.day.svg?url'
+
+/** @type {import('./assets/wow.cash.svg?url').default} */
 import wowcash from './assets/wow.cash.svg?url'
+
+/** @type {import('./assets/privacy.watch.svg?url').default} */
 import privacywatch from './assets/privacy.watch.svg?url'
 
 /**
- * @param mountID {string} Mount point ID
- * @param sectionTitleHeading {'h2' | 'h3' | 'h4' | 'h5'}
- * @param anchorTitleHeading {'h3' | 'h4' | 'h5' | 'h6'}
- * @param fontFamilyTitle {CSSStyleDeclaration['fontFamily']} Font family for title
- * @param fontFamilyDescription {CSSStyleDeclaration['fontFamily']} Font family for description
+ * Inject the awesome list into the page
+ *
+ * @param {string} mountID Mount point ID
+ * @param {SectionHeading} [sectionTitleHeading='h2']
+ * @param {AnchorHeading} [anchorTitleHeading='h3']
+ * @param {CSSStyleDeclaration['fontFamily']} [fontFamilyTitle='sans-serif']
+ * @param {CSSStyleDeclaration['fontFamily']} [fontFamilyDescription='sans-serif']
+ * @type {InjectFN}
  */
 function inject (
 	mountID,
